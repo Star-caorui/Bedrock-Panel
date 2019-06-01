@@ -1,11 +1,11 @@
-Minecraft Bedrock Edition Web Control Center  
+Minecraft Bedrock Edition Web Control Panel
 Its theory can be used in any version of MC server, and limited by SH support, it can only be used in bedrock edition at present.  
   
 This version is not yet perfect, look forward to it!  
 PHP by Star_caorui,SH by flysky,CSS by AUI Lib(https://github.com/liulangnan/aui)  
   
-Minecraft基岩版网页控制中心  
-它理论可以应用于任何版本的Minecraft服务器，受sh文件支持的限制，目前只能应用于基岩版本。  
+我的世界基岩版网页控制面板
+它理论可以应用于任何版本的的的Minecraft服务器，受SH文件支持的限制，目前只能应用于基岩版本。
   
 这个版本还不完善，期待我把它完善吧！  
 PHP代码由Star_caorui负责编写，SH脚本由flysky编写。以及CSS基于AUI的公共库(https://github.com/liulangnan/aui)。  
