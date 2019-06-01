@@ -1,9 +1,17 @@
+English | [简体中文](https://github.com/Star-caorui/MCBE-Web-Control-Panel/blob/master/readme_ZH.md)
+
 Minecraft Bedrock Edition Web Control Panel
+======
+This Project uses the Apache-2.0 protocal
+
 Its theory can be used in any version of MC server, and limited by SH support, it can only be used in bedrock edition at present.  
   
-This version is not yet perfect, look forward to it!  
+This version is not yet perfect, look forward to it! 
+
 PHP by Star_caorui,SH by flysky,CSS by AUI Lib(https://github.com/liulangnan/aui)  
-  
+
+---------------------
+
 我的世界基岩版网页控制面板
 它理论可以应用于任何版本的Minecraft服务器，受SH文件支持的限制，目前只能应用于基岩版本。
   
