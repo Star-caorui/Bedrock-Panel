@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/Star-caorui/MCBE-Web-Control-Panel/blob/master/readme_ZH.md)
+English | [简体中文](https://github.com/CNflysky/MCBE-Web-Control-Panel/blob/master/README_cn.md)
 
 Minecraft Bedrock Edition Web Control Panel
 ======
