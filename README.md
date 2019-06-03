@@ -2,7 +2,7 @@ English | [简体中文](https://github.com/Star-caorui/MCBE-Web-Control-Panel/b
 
 Minecraft Bedrock Edition Web Control Panel
 ======
-Please note this web panel can only used in Ubuntu 18+ systems.
+Please note this web panel can only used in **Ubuntu 18+ systems**.
 
 Requirements:
 
@@ -12,9 +12,9 @@ libssl-dev 1.1+
 
 Glibc 2.26+
 
-About 2GB Disk Space
+About **2GB** Disk Space
 
-A good internet connection
+**A good internet connection**
 
 This project used CSS AUI Lib(https://github.com/liulangnan/aui)  
 
@@ -47,4 +47,4 @@ This project used CSS AUI Lib(https://github.com/liulangnan/aui)
 * (Cause some reason, part of the code was delete from this repository later)
 
 2019/5/26
-* CNFlysky propose to build a project that can manage server on website.
+* CNflysky propose to build a project that can manage server on website.
