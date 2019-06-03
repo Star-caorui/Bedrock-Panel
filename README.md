@@ -19,7 +19,7 @@ A good internet connection
 This project used CSS AUI Lib(https://github.com/liulangnan/aui)  
 
 ## Catalogue
-* [Update Logs](#Update_Logs)
+* [Update Logs](#update-logs)
 
 ## Update Logs
 (Time Date:YYYY/MM/DD)
