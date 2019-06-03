@@ -1,4 +1,4 @@
-[English](https://github.com/CNflysky/MCBE-Web-Control-Panel/blob/master/README.md) | 简体中文
+[English](https://github.com/Star-caorui/MCBE-Web-Control-Panel/blob/master/README.md) | 简体中文
 
 我的世界基岩版网页控制面板
 ======
