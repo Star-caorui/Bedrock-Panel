@@ -87,23 +87,12 @@ fi
 #启动服务器
 "-on")
 screen -dmS mc /bin/bash -c "cd /opt/mc && ./bedrock_server | tee log.txt"
-if screen -ls | grep -q "$2" ;then
-echo 1
-else
-echo 0
-fi
 ;;
 #关闭服务器
 "-off")
 screen -x -S "$2" -p 0 -X stuff "stop"
 screen -x -S "$2" -p 0 -X stuff "\n"
-sleep 2s
 rm /opt/mc/log.txt
-if screen -ls | grep -q "$2" ;then
-echo 0
-else
-echo 1
-fi
 ;;
 #查询白名单
 "-wquery")
