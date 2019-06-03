@@ -3,25 +3,117 @@
 include "config.php";
 
 
-//安装检测
-if ($install != "true") {
-    header('Location: install.php');
-}
-else {
+//变量接收
+$password_in = $_GET["password"];
+$open = $_GET["open"];
+$off = $_GET["off"];
 
 
-//登录检测
-$user_in = $_POST['user'];
-$password_in = $_POST['password'];
-session_start();
-$user_in = $_SESSION['user'];
-if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
-  echo "<script language=\"JavaScript\">alert(\"欢迎 {$user_in} 登入后台！\");</script>";
-} else {
-  header('Location: login.php');
+//身份判断
+if (!isset($password_in)) {
+    echo "403";
+} elseif ($password_in != $password) {
+echo "密码错误";
 }
+  else {
+    //检测服务器模块
+      if (!isset($open)) {
+          echo "";
+      } elseif ($open != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //启动服务器模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //关闭服务器模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //查询白名单模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //添加白名单模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //删除白名单模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //查询Ban模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //添加Ban模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //删除Ban模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //备份地图模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
+
+    //恢复地图模块
+      if (!isset($off)) {
+          echo "";
+      } elseif ($off != '1') {
+          echo "404";
+      } else {
+          echo "is on";
+      }
 }
 
-//引入头部文件
-include "head.php";
 ?>
