@@ -5,8 +5,18 @@ include "config.php";
 
 //变量接收
 $password_in = $_GET["password"];
+
+$status = $_GET["status"];
 $open = $_GET["open"];
 $off = $_GET["off"];
+$wquery = $_GET["wquery"];
+$wa = $_GET["wa"];
+$wr = $_GET["wr"];
+$backup = $_GET["wr"];
+$restore = $_GET["wr"];
+
+$str_1 = $_GET["str1"];
+$str_2 = $_GET["str2"];
 
 
 //身份判断
@@ -17,21 +27,21 @@ echo "密码错误";
 }
   else {
     //检测服务器模块
+      if (!isset($status)) {
+          echo "";
+      } elseif ($status != '1') {
+          echo "404";
+      } else {
+          system("sudo mcchk -status ".$screen);
+      }
+
+    //启动服务器模块
       if (!isset($open)) {
           echo "";
       } elseif ($open != '1') {
           echo "404";
       } else {
-          echo "is on";
-      }
-
-    //启动服务器模块
-      if (!isset($off)) {
-          echo "";
-      } elseif ($off != '1') {
-          echo "404";
-      } else {
-          echo "is on";
+          system("sudo mcchk -on ".$screen);
       }
 
     //关闭服务器模块
@@ -40,70 +50,43 @@ echo "密码错误";
       } elseif ($off != '1') {
           echo "404";
       } else {
-          echo "is on";
+          system("sudo mcchk -off ".$screen);
       }
 
     //查询白名单模块
-      if (!isset($off)) {
+      if (!isset($wquery)) {
           echo "";
-      } elseif ($off != '1') {
+      } elseif ($wquery != '1') {
           echo "404";
       } else {
-          echo "is on";
+          system("sudo mcchk -wquery ".$screen);
       }
 
     //添加白名单模块
-      if (!isset($off)) {
+      if (!isset($wa)) {
           echo "";
-      } elseif ($off != '1') {
+      } elseif ($wa != '1') {
           echo "404";
       } else {
-          echo "is on";
+          system("sudo mcchk -wa ".$screen);
       }
 
     //删除白名单模块
-      if (!isset($off)) {
+      if (!isset($wr)) {
           echo "";
-      } elseif ($off != '1') {
+      } elseif ($wr != '1') {
           echo "404";
       } else {
-          echo "is on";
-      }
-
-    //查询Ban模块
-      if (!isset($off)) {
-          echo "";
-      } elseif ($off != '1') {
-          echo "404";
-      } else {
-          echo "is on";
-      }
-
-    //添加Ban模块
-      if (!isset($off)) {
-          echo "";
-      } elseif ($off != '1') {
-          echo "404";
-      } else {
-          echo "is on";
-      }
-
-    //删除Ban模块
-      if (!isset($off)) {
-          echo "";
-      } elseif ($off != '1') {
-          echo "404";
-      } else {
-          echo "is on";
+          system("sudo mcchk -wr ".$screen);
       }
 
     //备份地图模块
-      if (!isset($off)) {
+      if (!isset($backup)) {
           echo "";
-      } elseif ($off != '1') {
+      } elseif ($backup != '1') {
           echo "404";
       } else {
-          echo "is on";
+          system("sudo mcchk -backup");
       }
 
     //恢复地图模块
@@ -112,7 +95,7 @@ echo "密码错误";
       } elseif ($off != '1') {
           echo "404";
       } else {
-          echo "is on";
+          system("sudo mcchk -restore ".$str_1);
       }
 }
 
