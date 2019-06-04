@@ -1,7 +1,7 @@
 English | [简体中文](https://github.com/Star-caorui/MCBE-Web-Control-Panel/blob/master/README_zh.md)
-
-Minecraft Bedrock Edition Web Control Panel
-======
+Bedrock-Panel
+=====
+A web panel for Minecraft Bedrock Server Management.  
 Please note this web panel can only used in **Ubuntu 18+ systems**.
 
 Requirements:
