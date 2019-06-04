@@ -38,6 +38,7 @@ preg_match_all($pattern_cpu, $str_cpu, $out_cpu);
 
 $n=0;
 
+$total_all = ceil(100*(disk_total_space('/')-disk_free_space('/'))/disk_total_space('/'));
 
 ?>
 <meta http-equiv="refresh" content="3; url=<?php echo $head.$_SERVER['HTTP_HOST']; ?>">
@@ -90,8 +91,37 @@ else
      <div class="aui-list-item-inner">
        硬盘:
       <div class="aui-progress aui-progress-sm" style="margin:0 auto;width:75%"> 
-       <div class="aui-progress-bar" style="width: 60%;"></div> 
+       <div class="aui-progress-bar" style="width: <?php echo $total_all.'%'; ?>;"></div> 
       </div> 
+     </div> </li> 
+   </ul> 
+  </div>   
+<br />
+ <div class="aui-content aui-margin-b-15"> 
+   <ul class="aui-list aui-list-in"> 
+    <li class="aui-list-header">快捷操作</li> 
+    <li class="aui-list-item"> 
+     <div class="aui-list-item-inner"> 
+第一项
+     </div> </li> 
+    <li class="aui-list-item">
+     <div class="aui-list-item-inner">
+第二项     </div></li>
+    <li class="aui-list-item"> 
+     <div class="aui-list-item-inner">
+第三项
+ </div> </li> 
+    <li class="aui-list-item"> 
+     <div class="aui-list-item-inner">
+       第四项
+     </div> </li> 
+    <li class="aui-list-item"> 
+     <div class="aui-list-item-inner">
+       第五项
+     </div> </li> 
+    <li class="aui-list-item"> 
+     <div class="aui-list-item-inner">
+      第六项
      </div> </li> 
    </ul> 
   </div>   
