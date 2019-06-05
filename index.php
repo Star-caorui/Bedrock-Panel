@@ -142,14 +142,6 @@ if ($fkz!=0) {
 	
 </form>
      </div> </li> 
-    <li class="aui-list-item"> 
-     <div class="aui-list-item-inner">
-       第五项
-     </div> </li> 
-    <li class="aui-list-item"> 
-     <div class="aui-list-item-inner">
-      第六项
-     </div> </li> 
    </ul> 
   </div>   
  </body>
