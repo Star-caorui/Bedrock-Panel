@@ -49,17 +49,13 @@ $total_all = ceil(100*(disk_total_space('/')-disk_free_space('/'))/disk_total_sp
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner"> 
 
-<script type="text/javascript">
-var str = <?php echo "$fkz"; ?>;
-if (str!=0)
-{
-	document.write("服务器已开启");
+<?php
+if ($fkz!=0) {
+  echo '服务器已开启';
+} else {
+  echo '服务器未开启';
 }
-else
-{
-	document.write("服务器未开启");
-}
-</script>
+?>
 
 
      </div> </li> 
@@ -102,18 +98,41 @@ else
     <li class="aui-list-header">快捷操作</li> 
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner"> 
-第一项
+			<a href="/run.php?password=<?php echo $password; ?>&
+<?php
+if ($fkz!=0) {
+  echo 'off';
+} else {
+  echo 'open';
+}
+?>
+=1" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">
+<?php
+if ($fkz!=0) {
+  echo '关闭服务器';
+} else {
+  echo '开启服务器';
+}
+?></a>
+
+
      </div> </li> 
     <li class="aui-list-item">
      <div class="aui-list-item-inner">
-第二项     </div></li>
+   	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">备份</a>
+	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">回档</a>
+
+    </div></li>
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
 第三项
  </div> </li> 
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
-       第四项
+	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">添加白名</a>
+	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">查询玩家</a>
+	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">移除白名</a>
+
      </div> </li> 
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
