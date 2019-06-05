@@ -125,16 +125,21 @@ if ($fkz!=0) {
     </div></li>
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
-<form action="run.php?password=<?php echo $password; ?>&<?php echo $in; ?>=1" method="post">
+<form action="run.php?password=<?php echo $password; ?>" method="post">
 <input type="text" name='str1' placeholder="Xbox ID">
 <!--input type="text" name='str2' placeholder="原因:"-->
  </div> </li> 
+<li class="aui-list-item"> 
+     <div class="aui-list-item-inner">
+                <label><input class="aui-checkbox" type="radio" name="wa"> 加白</label>
+                <label><input class="aui-checkbox" type="radio" name="wquery"> 查询</label>
+                <label><input class="aui-checkbox" type="radio" name="wr"> 删白</label>
+
+ </div> </li>
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
-  <input type="submit" value="Submit" />
-	<a href="/run.php?password=<?php echo $password; ?>&wa=1&str1=<?php echo $_GET["str1"]; ?>" type="submit" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">添加白名</a>
-	<a href="/?find=1" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">查询玩家</a>
-	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">移除白名</a>
+  <input class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm" type="submit" value="确认操作" />
+	
 </form>
      </div> </li> 
     <li class="aui-list-item"> 
