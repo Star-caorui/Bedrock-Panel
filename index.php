@@ -41,7 +41,6 @@ $n=0;
 $total_all = ceil(100*(disk_total_space('/')-disk_free_space('/'))/disk_total_space('/'));
 
 ?>
-<meta http-equiv="refresh" content="3; url=<?php echo $head.$_SERVER['HTTP_HOST']; ?>">
   <h2 class="aui-bar">Minecraft 网页控制后台</h2> 
   <div class="aui-content aui-margin-b-15"> 
    <ul class="aui-list aui-list-in"> 
@@ -71,7 +70,8 @@ if ($fkz!=0) {
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
        CPU:
-      <div class="aui-progress aui-progress-sm" style="margin:0 auto;width:75%"> 
+      <div class="aui-progress aui-p服务器未开启
+rogress-sm" style="margin:0 auto;width:75%"> 
        <div class="aui-progress-bar" style="width: <?php echo ceil((100*($out_cpu[1][$n]+$out_cpu[2][$n]+$out_cpu[3][$n])/($out_cpu[4][$n]+$out_cpu[5][$n]+$out_cpu[6][$n]+$out_cpu[7][$n])))."%"; ?>;"></div> 
       </div> 
      </div> </li> 
@@ -119,20 +119,23 @@ if ($fkz!=0) {
      </div> </li> 
     <li class="aui-list-item">
      <div class="aui-list-item-inner">
-   	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">备份</a>
+   	<a href="/run.php?password=<?php echo $password; ?>&backup=1" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">备份</a>
 	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">回档</a>
 
     </div></li>
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
-第三项
+<form action="run.php?password=<?php echo $password; ?>&<?php echo $in; ?>=1" method="post">
+<input type="text" name='str1' placeholder="Xbox ID">
+<!--input type="text" name='str2' placeholder="原因:"-->
  </div> </li> 
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
-	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">添加白名</a>
-	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">查询玩家</a>
+  <input type="submit" value="Submit" />
+	<a href="/run.php?password=<?php echo $password; ?>&wa=1&str1=<?php echo $_GET["str1"]; ?>" type="submit" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">添加白名</a>
+	<a href="/?find=1" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">查询玩家</a>
 	<a href="/" class="aui-btn aui-btn-primary aui-btn-block aui-btn-outlined aui-btn-sm">移除白名</a>
-
+</form>
      </div> </li> 
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
