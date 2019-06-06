@@ -112,8 +112,8 @@ mv mcchk.sh /opt/
 echo 1
 ;;
 "-set")
-sed -i 's/'$2'/'$3'/g' /var/www/html/config.php
-if grep -q -w "$3" /var/www/html/config.php ; then
+sed -i 's/'$2'/'$3'/g' $4
+if grep -q -w "$3" $4 ; then
 echo 1
 else 
 echo 0
@@ -139,6 +139,6 @@ echo "将玩家从白名单中移除:mcchk -wr <screen窗口名> <\"玩家id\">"
 echo "开启服务器:mcchk -on <screen窗口名>"
 echo "关闭服务器:mcchk -off <screen窗口名>"
 echo "检测玩家是否在白名单中:mcchk -wquery <\"玩家名称\">"
-echo "修改config.php内的常量:mcchk -set <要修改的常量值> <修改后的常量值>"
+echo "修改文件内容:mcchk -set <要修改的常量值> <修改后的常量值> <文件完整路径>"
 echo "注入指令:mcchk -cmd <screen窗口名> <\"指令\">"
 esac
