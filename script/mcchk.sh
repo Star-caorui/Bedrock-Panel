@@ -86,7 +86,7 @@ fi
 ;;
 #启动服务器
 "-on")
-screen -dmS mc /bin/bash -c "cd /opt/mc && ./bedrock_server | tee log.txt"
+screen -dmS "$2" /bin/bash -c "cd /opt/mc && ./bedrock_server | tee log.txt"
 ;;
 #关闭服务器
 "-off")
