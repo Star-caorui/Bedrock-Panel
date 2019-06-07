@@ -25,6 +25,12 @@ This project used CSS AUI Lib(https://github.com/liulangnan/aui)
 ## Update Logs
 (Time Date:YYYY/MM/DD)
 
+2019/6/7
+* Star_caorui created first alpha version.   
+
+2019/6/6
+* CNflysky update mcchk.sh.   
+
 2019/6/1
 * Star_caorui created Github repository.   
 
