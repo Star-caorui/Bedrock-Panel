@@ -3,11 +3,10 @@ English | [简体中文](https://github.com/Star-caorui/Bedrock-Panel/blob/maste
 Bedrock-Panel
 =====
 A web panel for Minecraft Bedrock Server Management.  
-Please note this web panel can only used in **Ubuntu 18+ systems**.
 
 Requirements:
 
-PHP 7+
+Debian-based operating system
 
 libssl-dev 1.1+
 
@@ -16,6 +15,16 @@ Glibc 2.26+
 About **2GB** Disk Space
 
 **A good internet connection**
+
+Recommendation:
+
+Ubuntu 18+
+
+PHP 7.0+
+
+And all the above requirements
+
+=====
 
 This project used CSS AUI Lib(https://github.com/liulangnan/aui)  
 
