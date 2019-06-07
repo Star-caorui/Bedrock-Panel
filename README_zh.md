@@ -2,11 +2,11 @@
 
 我的世界基岩版网页控制面板
 ======
-该面板仅能在 **Ubuntu 18.04 或更高**的Ubuntu发行版上运行
-
 环境要求:
 
-PHP 7+
+最低要求:
+
+Debian系任意系统
 
 libssl-dev 1.1+
 
@@ -15,6 +15,14 @@ Glibc 2.26+
 至少拥有**2GB**的可用磁盘空间
 
 **良好的网络环境**
+
+建议配置：
+
+UBuntu 18+操作系统
+
+PHP 7.0+
+
+======
 
 PHP代码由Star_caorui负责编写，SH脚本由flysky编写
 
@@ -25,6 +33,12 @@ PHP代码由Star_caorui负责编写，SH脚本由flysky编写
 
 ## 更新日志
 (时间格式:年/月/日)
+
+2019/6/7
+* Star_caorui发布了第一个Alpha版测试
+
+2019/6/6
+* CNflysky修改了mcchk的一个bug
 
 2019/6/1
 * Star_caorui创建了Github的开源项目库
