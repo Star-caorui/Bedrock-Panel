@@ -22,6 +22,8 @@ UBuntu 18+操作系统
 
 PHP 7.0+
 
+和上述所有要求
+
 ======
 
 PHP代码由Star_caorui负责编写，SH脚本由flysky编写
