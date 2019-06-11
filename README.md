@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/Star-caorui/Bedrock-Panel/blob/master/README_zh.md)
+English | [简体中文](README_zh.md)
 
 Bedrock-Panel
 =====
