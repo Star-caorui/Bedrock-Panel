@@ -20,7 +20,7 @@ if ($write_config) {
     unlink('html_form_action.php');
     header('Location: index.php');
 } else {
-    echo "安装未完成-正在检查解决方案。</h2>";
+    echo "<h2>安装未完成-正在检查解决方案。</h2>";
     echo "<p>请以Root身份执行以下命令</p>";
     echo "<p>chmod -R 777 " . $pwd . "</p>";
 }
