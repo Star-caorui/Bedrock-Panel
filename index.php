@@ -70,8 +70,7 @@ if ($fkz!=0) {
     <li class="aui-list-item"> 
      <div class="aui-list-item-inner">
        CPU:
-      <div class="aui-progress aui-p服务器未开启
-rogress-sm" style="margin:0 auto;width:75%"> 
+      <div class="aui-progress aui-progress-sm" style="margin:0 auto;width:75%"> 
        <div class="aui-progress-bar" style="width: <?php echo ceil((100*($out_cpu[1][$n]+$out_cpu[2][$n]+$out_cpu[3][$n])/($out_cpu[4][$n]+$out_cpu[5][$n]+$out_cpu[6][$n]+$out_cpu[7][$n])))."%"; ?>;"></div> 
       </div> 
      </div> </li> 
