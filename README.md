@@ -1,7 +1,6 @@
 English | [简体中文](README_zh.md)
 
 Bedrock-Panel
-
 =====
 
 Alpha Branch => Pre-developed unstable version (Not recommended)
