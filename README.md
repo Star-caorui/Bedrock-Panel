@@ -2,6 +2,12 @@ English | [简体中文](README_zh.md)
 
 Bedrock-Panel
 =====
+Alpha Branch => Pre-developed unstable version (Not recommended)
+
+Beta Branch => Stable version before release
+
+Master Branch => Released version
+=====
 A web panel for Minecraft Bedrock Server Management.  
 
 Requirements:
