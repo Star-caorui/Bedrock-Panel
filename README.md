@@ -1,3 +1,8 @@
+####此项目已迁移至[新项目地址](https://github.com/bedrock-panel/Bedrock-Panel)  
+####此项目已迁移至[新项目地址](https://github.com/bedrock-panel/Bedrock-Panel)  
+####此项目已迁移至[新项目地址](https://github.com/bedrock-panel/Bedrock-Panel)  
+  
+  
 English | [简体中文](README_zh.md)
 
 Bedrock-Panel
